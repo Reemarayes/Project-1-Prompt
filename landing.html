@@ -1,0 +1,51 @@
+<!-- SECOND PAGE -->
+
+<!doctype html>
+<html>
+  <head>
+
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+
+  <body onload="game();">
+
+    <h1 class="gamePage">Tic Tac Toe </h1>
+    <div id="message"> </div>
+    <br>
+    
+    <!-- Initialize the borders for the table -->
+    <table>
+
+      <tr>
+          <td class="box" id="b1" onclick="xo(this)"> </td>
+          <td class="box" id="b2" onclick="xo(this)"> </td>
+          <td class="box" id="b3" onclick="xo(this)"> </td>
+      </tr>
+      <tr>
+          <td class="box" id="b4" onclick="xo(this)"> </td>
+          <td class="box" id="b5" onclick="xo(this)"> </td>
+          <td class="box" id="b6" onclick="xo(this)"> </td>
+      </tr>
+      <tr>
+          <td class="box" id="b7" onclick="xo(this)"> </td>
+          <td class="box" id="b8" onclick="xo(this)"> </td>
+          <td class="box" id="b9" onclick="xo(this)"> </td>
+      </tr>
+
+  </table>
+
+  <br><br>
+
+<!-- Reset the game button  -->
+
+  <footer>
+          <button class="reset" onclick="location.reload();"> Reset Game </button>       
+  </footer>
+
+  <script src="main.js"> </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  </body>
+  </html>
